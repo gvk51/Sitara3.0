@@ -1,0 +1,2 @@
+obj-$(CONFIG_INDUS2NET)		:= indus_gbe.o
+indus_gbe-y	+= indus_main.o indus_io.o indus_ethtool.o

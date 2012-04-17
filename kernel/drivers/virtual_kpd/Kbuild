@@ -1,0 +1,2 @@
+obj-y	:= vkey.o
+vkey-y	+= vmodule.o

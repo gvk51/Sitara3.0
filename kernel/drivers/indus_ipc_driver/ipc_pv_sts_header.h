@@ -1,0 +1,163 @@
+#ifndef __IPC_PV_STS_HEADER_H
+#define __IPC_PV_STS_HEADER_H
+
+
+#define INDUS_BUF_STATUS_OFFSET  	0x0
+#define INDUS_RESERVED_31_2_SHIFT	0x02
+#define INDUS_RESERVED_31_2_MASK	0x3FFFFFFF
+#define INDUS_FULL_SHIFT    	   	0x01
+#define INDUS_FULL_MASK    	   	0x00000001
+#define INDUS_EMPTY_SHIFT    	   	0x00
+#define INDUS_EMPTY_MASK    	   	0x00000001
+
+#define INDUS_INTR_DISABLE_OFFSET  	0x4
+#define INDUS_RESERVED_31_1_SHIFT    	0x01
+#define INDUS_RESERVED_31_1_MASK    	0x7FFFFFFF
+#define INDUS_INT_DIS_SHIFT    	   	0x00
+#define INDUS_INT_DIS_MASK    	   	0x00000001
+
+#define INDUS_INTR_CLEAR_OFFSET  	0x8
+#define INDUS_RESERVED_31_1_SHIFT    	0x01
+#define INDUS_RESERVED_31_1_MASK    	0x7FFFFFFF
+#define INDUS_INT_CLR_SHIFT    	   	0x00
+#define INDUS_INT_CLR_MASK    	   	0x00000001
+
+#define INDUS_INTR_RAW_STATUS_OFFSET  	0xC
+#define INDUS_RESERVED_31_1_SHIFT    	0x01
+#define INDUS_RESERVED_31_1_MASK    	0x7FFFFFFF
+#define INDUS_RSTS_SHIFT    	   	0x00
+#define INDUS_RSTS_MASK    	   	0x00000001
+
+#define INDUS_INTR_MASK_STATUS_OFFSET  	0x10
+#define INDUS_RESERVED_31_1_SHIFT    	0x01
+#define INDUS_RESERVED_31_1_MASK    	0x7FFFFFFF
+#define INDUS_MSTS_SHIFT    	   	0x00
+#define INDUS_MSTS_MASK    	   	0x00000001
+
+#define INDUS_X1_PRG1_OFFSET  		0x14
+#define INDUS_RSV_SHIFT    	   	0x1E
+#define INDUS_RSV_MASK    	   	0x00000003
+#define INDUS_DS_TIM_SHIFT    	   	0x1C
+#define INDUS_DS_TIM_MASK    	   	0x00000003
+#define INDUS_ERR_RSP_SHIFT    	   	0x1B
+#define INDUS_ERR_RSP_MASK    	   	0x00000001
+#define INDUS_B2B_CP_SHIFT    	   	0x1A
+#define INDUS_B2B_CP_MASK    	   	0x00000001
+#define INDUS_66M_CP_SHIFT    	   	0x19
+#define INDUS_66M_CP_MASK    	   	0x00000001
+#define INDUS_CPTR_PR_SHIFT    	   	0x18
+#define INDUS_CPTR_PR_MASK    	   	0x00000001
+#define INDUS_LAT_TIM_SHIFT    	   	0x10
+#define INDUS_LAT_TIM_MASK    	   	0x00000003
+#define INDUS_MAX_LAT_SHIFT    	   	0x08
+#define INDUS_MAX_LAT_MASK    	   	0x00000003
+#define INDUS_MIN_GNT_SHIFT    	   	0x00
+#define INDUS_MIN_GNT_MASK    	   	0x00000003
+#define INDUS_RESERVED___SHIFT       	0x00
+#define INDUS_RESERVED___MASK    	0x00000001
+
+#define INDUS_X1_PRG2_OFFSET  		0x18
+#define INDUS_RSV_SHIFT    	   	0x0E
+#define INDUS_RSV_MASK    	   	0x00000003
+#define INDUS_INT_PIN_SHIFT    	   	0x06
+#define INDUS_INT_PIN_MASK    	   	0x00000003
+#define INDUS_BAR5_PRF_SHIFT       	0x05
+#define INDUS_BAR5_PRF_MASK    	   	0x00000001
+#define INDUS_BAR4_PRF_SHIFT    	0x04
+#define INDUS_BAR4_PRF_MASK    	   	0x00000001
+#define INDUS_BAR3_PRF_SHIFT    	0x03
+#define INDUS_BAR3_PRF_MASK    	   	0x00000001
+#define INDUS_BAR2_PRF_SHIFT    	0x02
+#define INDUS_BAR2_PRF_MASK    	   	0x00000001
+#define INDUS_BAR1_PRF_SHIFT    	0x01
+#define INDUS_BAR1_PRF_MASK    	   	0x00000001
+#define INDUS_BAR0_PRF_SHIFT       	0x00
+#define INDUS_BAR0_PRF_MASK    	   	0x00000001
+#define INDUS_RESERVED___SHIFT    	0x00
+#define INDUS_RESERVED___MASK    	0x00000001
+
+#define INDUS_X2_PRG1_OFFSET  		0x1C
+#define INDUS_RSV_SHIFT    	   	0x1E
+#define INDUS_RSV_MASK    	   	0x00000003
+#define INDUS_DS_TIM_SHIFT    	   	0x1C
+#define INDUS_DS_TIM_MASK    	   	0x00000003
+#define INDUS_ERR_RSP_SHIFT    	   	0x1B
+#define INDUS_ERR_RSP_MASK    	   	0x00000001
+#define INDUS_B2B_CP_SHIFT    	   	0x1A
+#define INDUS_B2B_CP_MASK    	   	0x00000001
+#define INDUS_66M_CP_SHIFT    	   	0x19
+#define INDUS_66M_CP_MASK    	   	0x00000001
+#define INDUS_CPTR_PR_SHIFT    	   	0x18
+#define INDUS_CPTR_PR_MASK    	   	0x00000001
+#define INDUS_LAT_TIM_SHIFT    	   	0x10
+#define INDUS_LAT_TIM_MASK    	   	0x00000003
+#define INDUS_MAX_LAT_SHIFT    	   	0x08
+#define INDUS_MAX_LAT_MASK    	   	0x00000003
+#define INDUS_MIN_GNT_SHIFT    	   	0x00
+#define INDUS_MIN_GNT_MASK    	   	0x00000003
+#define INDUS_RESERVED___SHIFT    	0x00
+#define INDUS_RESERVED___MASK    	0x00000001
+
+#define INDUS_X2_PRG2_OFFSET  0x20
+#define INDUS_RSV_SHIFT    	   	0x0E
+#define INDUS_RSV_MASK    	   	0x00000003
+#define INDUS_INT_PIN_SHIFT    	   	0x06
+#define INDUS_INT_PIN_MASK    	   	0x00000003
+#define INDUS_BAR5_PRF_SHIFT    	0x05
+#define INDUS_BAR5_PRF_MASK    	   	0x00000001
+#define INDUS_BAR4_PRF_SHIFT    	0x04
+#define INDUS_BAR4_PRF_MASK    	   	0x00000001
+#define INDUS_BAR3_PRF_SHIFT    	0x03
+#define INDUS_BAR3_PRF_MASK    	   	0x00000001
+#define INDUS_BAR2_PRF_SHIFT    	0x02
+#define INDUS_BAR2_PRF_MASK    	   	0x00000001
+#define INDUS_BAR1_PRF_SHIFT    	0x01
+#define INDUS_BAR1_PRF_MASK    	   	0x00000001
+#define INDUS_BAR0_PRF_SHIFT    	0x00
+#define INDUS_BAR0_PRF_MASK    	   	0x00000001
+#define INDUS_RESERVED___SHIFT    	0x00
+#define INDUS_RESERVED___MASK    	0x00000001
+
+#define INDUS_A9_PRG1_OFFSET  		0x24
+#define INDUS_RSV_SHIFT    	   	0x1E
+#define INDUS_RSV_MASK    	   	0x00000003
+#define INDUS_DS_TIM_SHIFT    	   	0x1C
+#define INDUS_DS_TIM_MASK    	   	0x00000003
+#define INDUS_ERR_RSP_SHIFT    	   	0x1B
+#define INDUS_ERR_RSP_MASK    	   	0x00000001
+#define INDUS_B2B_CP_SHIFT    	   	0x1A
+#define INDUS_B2B_CP_MASK    	   	0x00000001
+#define INDUS_66M_CP_SHIFT    	   	0x19
+#define INDUS_66M_CP_MASK    	   	0x00000001
+#define INDUS_CPTR_PR_SHIFT    	   	0x18
+#define INDUS_CPTR_PR_MASK    	   	0x00000001
+#define INDUS_LAT_TIM_SHIFT    	   	0x10
+#define INDUS_LAT_TIM_MASK    	   	0x00000003
+#define INDUS_MAX_LAT_SHIFT    	   	0x08
+#define INDUS_MAX_LAT_MASK    	   	0x00000003
+#define INDUS_MIN_GNT_SHIFT    	   	0x00
+#define INDUS_MIN_GNT_MASK    	   	0x00000003
+#define INDUS_RESERVED___SHIFT    	0x00
+#define INDUS_RESERVED___MASK    	0x00000001
+
+#define INDUS_A9_PRG2_OFFSET  		0x28
+#define INDUS_RSV_SHIFT    	   	0x0E
+#define INDUS_RSV_MASK    	   	0x00000003
+#define INDUS_INT_PIN_SHIFT    	   	0x06
+#define INDUS_INT_PIN_MASK    	   	0x00000003
+#define INDUS_BAR5_PRF_SHIFT       	0x05
+#define INDUS_BAR5_PRF_MASK    	   	0x00000001
+#define INDUS_BAR4_PRF_SHIFT    	0x04
+#define INDUS_BAR4_PRF_MASK    	   	0x00000001
+#define INDUS_BAR3_PRF_SHIFT    	0x03
+#define INDUS_BAR3_PRF_MASK    	   	0x00000001
+#define INDUS_BAR2_PRF_SHIFT    	0x02
+#define INDUS_BAR2_PRF_MASK    	   	0x00000001
+#define INDUS_BAR1_PRF_SHIFT    	0x01
+#define INDUS_BAR1_PRF_MASK    	   	0x00000001
+#define INDUS_RESERVED___SHIFT    	0x00
+#define INDUS_RESERVED___MASK    	0x00000001
+#define INDUS_BAR0_PRF_SHIFT    	0x00
+#define INDUS_BAR0_PRF_MASK    	   	0x00000001
+
+#endif  /* __IPC_PV_STS_HEADER_H */

@@ -1,0 +1,6 @@
+config INDUS2NET
+	tristate "Ineda systems 1Gbps NIC "
+	depends on PCI && INET
+	help
+	This driver implements the NIC functionality for Ineda Systems'
+	1Gbps network adapter .

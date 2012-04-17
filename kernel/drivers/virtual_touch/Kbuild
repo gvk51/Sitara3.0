@@ -1,0 +1,2 @@
+obj-y	:= vtouch.o
+vtouch-y	+= vmodule.o debug.o
